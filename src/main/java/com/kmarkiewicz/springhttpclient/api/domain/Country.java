@@ -8,31 +8,16 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+
 @Getter
 @Setter
 public class Country implements Serializable
 {
 
-    private String countryId;
-    private Double probability;
+    public String countryId;
+    public Double probability;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -4153184932314147037L;
-
-    public String getCountryId() {
-        return countryId;
-    }
-
-    public void setCountryId(String countryId) {
-        this.countryId = countryId;
-    }
-
-    public Double getProbability() {
-        return probability;
-    }
-
-    public void setProbability(Double probability) {
-        this.probability = probability;
-    }
+    private final static long serialVersionUID = 5533410515422720426L;
 
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;

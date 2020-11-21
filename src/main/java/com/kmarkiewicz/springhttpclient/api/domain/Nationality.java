@@ -9,32 +9,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Setter
 @Getter
+@Setter
 public class Nationality implements Serializable
 {
 
-    private String name;
-    private List<Country> country = null;
+    public String name;
+    public List<Country> country = null;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -5413429110665152241L;
-
-   public String getName() {
-        return name;
-    }
-
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Country> getCountry() {
-        return country;
-    }
-
-    public void setCountry(List<Country> country) {
-        this.country = country;
-    }
+    private final static long serialVersionUID = -2959196891586036676L;
 
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
